@@ -16,9 +16,11 @@
         
     </head>
     <body>
-       <h1>Заголовок</h1>
+       <h1>Main</h1>
+       <a href="{{route('mysite')}}">mysite</a>
+       <a href="/contacts">contacts</a>
        <div class="container">
-        @for($i=1; $i<=12; $i++)
+        @for($i=1; $i<=8; $i++)
         <div class="card">
             <img src="{{ Vite::asset('resources/images/img1.jpg') }}" alt="картинка">
             <h2>местный дурачок {{$i}}</h2>
